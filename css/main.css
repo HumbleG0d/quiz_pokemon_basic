@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+
+.body {
+  font-family: "Kanit", sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background: url(/assets/images/fotor-ai-2023052518637.jpg) no-repeat center /
+    cover;
+}
+
+.display_flex {
+  display: flex;
+}
+
+.main__div {
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.margin {
+  margin: 0;
+  color: #ffffff;
+}
+
+.main__info {
+  flex-direction: column;
+  gap: 1.25rem 0;
+  padding: 0.625rem;
+}
+
+.main__title {
+  font-weight: 800;
+  text-shadow: 0.1875rem 0.0625rem 0.75rem #2c1e55,
+    -0.125rem 0.0625rem 0.9375rem rgb(0, 146, 255);
+}
+
+.main__button {
+  text-align: center;
+  width: 8.75rem;
+  height: 2.8125rem;
+  padding: 0.625rem;
+  border: 0.125rem solid #ffffff;
+  border-radius: 0.5rem;
+  background-color: black;
+  color: #ffffff;
+}
