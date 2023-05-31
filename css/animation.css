@@ -1,0 +1,33 @@
+/**Animacion del titulo*/
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.span__title {
+  display: inline-block;
+  animation-iteration-count: infinite;
+}
+
+.span__jump--1 {
+  animation-name: jump;
+  animation-duration: 0.5s;
+}
+
+.span__jump--2 {
+  animation-name: jump;
+  animation-duration: 0.7s;
+}
+
+.span__jump--3 {
+  animation-name: jump;
+  animation-duration: 0.8s;
+}
+
+/*?Animacion del loafing Cargando .../
