@@ -53,6 +53,10 @@
   color: #ffffff;
 }
 
+.button__hover:hover {
+  background-color: rgb(167, 153, 129);
+}
+
 @media (30.625rem<= width <=37.5rem) {
   .main__title {
     font-size: 2.25rem;
