@@ -1,0 +1,33 @@
+.pokemon__play {
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: purple;
+}
+
+.pokemon__cart {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 0.9375rem;
+  border: 2px solid orange;
+  width: 80%;
+  height: 90%;
+  min-width: 412px;
+  background-color: rgb(233, 240, 240);
+}
+
+.pokemon__img {
+  width: 18.75em;
+  min-width: 18.75rem;
+  height: 12.5em;
+  background-color: red;
+}
+
+.pokemon__dats {
+  min-width: 18.75rem;
+  width: 18.75em;
+  height: 12.5em;
+  color: #9c9999;
+}
