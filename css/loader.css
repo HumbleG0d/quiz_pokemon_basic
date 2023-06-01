@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+
+body {
+  font-family: "Kanit", sans-serif;
+}
+
+.display_flex {
+  display: flex;
+}
+
+.loader {
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(61, 61, 61);
+}
+
+.loading {
+  color: #c9c9c9;
+  letter-spacing: 2px;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.point_animation {
+  display: inline-block;
+  animation-name: jump;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
