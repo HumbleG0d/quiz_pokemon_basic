@@ -1,9 +1,12 @@
 .pokemon__play {
+  display: none;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: purple;
+  background-image: url(/assets/images/cropped-1899-927-446274.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .pokemon__cart {
@@ -16,14 +19,13 @@
   height: 90%;
   min-width: 25.75rem;
   max-width: 42.5rem;
-  background-color: rgb(233, 240, 240);
+  background-color: rgb(225, 233, 233);
 }
 
 .pokemon__img {
   width: 18.75rem;
   min-width: 18.75rem;
   height: 12.5rem;
-  background-color: red;
 }
 
 .pokemon__dats {
