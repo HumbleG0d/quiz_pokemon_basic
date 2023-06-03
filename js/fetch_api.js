@@ -12,7 +12,6 @@ export const getData = async () => {
 		const data = await response.json()
 		let pokemon = getRandomPokemon(data)
 
-		console.log(pokemon)
 
 		const url1 = `https://pokeapi.co/api/v2/pokemon/${pokemon}`
 
