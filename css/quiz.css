@@ -26,6 +26,9 @@
   width: 18.75rem;
   min-width: 18.75rem;
   height: 12.5rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 
 .pokemon__dats {
