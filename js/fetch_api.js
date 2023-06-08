@@ -1,28 +1,30 @@
 import { ERRORS_MESSAGES } from './error_messages.js'
-import { getRandomPokemon } from './random_pokemons.js'
 
 export const getData = async () => {
-	const url = 'https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0'
+	const url = 'https://pokeapi.co/api/v2/pokemon/'
 	try {
 		const response = await fetch(url)
+
 		if(!response.ok){
 			throw new Error(getError(response))
 		}
 
 		const data = await response.json()
-		let pokemon = getRandomPokemon(data)
 
+		let info_pokemos = []
 
-		const url1 = `https://pokeapi.co/api/v2/pokemon/${pokemon}`
+		for(let index of data.results){
+			const response1 = await fetch(index.url)
 
-		const response1 = await fetch(url1)
+			if(!response1.ok){
+				throw new Error(getError(response1))
+			}
 
-		if(!response1.ok){
-			throw new Error(getError(response1))
+			const data1 = await response1.json()
+			info_pokemos.push(data1)
 		}
 
-		const data1 = await response1.json()
-		return data1
+		return info_pokemos
 		
 	} catch (error) {
 		console.log(error.name + ': ' + error.message)
