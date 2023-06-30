@@ -6,4 +6,5 @@ export const infoPokemon = (pokemon) => {
 	td_table.forEach((element , index) => {
 		element.style = `--size: calc(${pokemon.stats[index].base_stat}/300)`
 	})
+	console.log(pokemon.name)
 }
