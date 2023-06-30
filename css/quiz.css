@@ -17,6 +17,7 @@
   border: 0.125rem solid orange;
   width: 80%;
   height: 90%;
+  gap: 20px;
   min-width: 25.75rem;
   max-width: 42.5rem;
   background-color: rgb(225, 233, 233);
@@ -35,7 +36,20 @@
   min-width: 18.75rem;
   width: 18.75rem;
   height: 12.5rem;
+  align-self: center;
   color: #9c9999;
+}
+
+.pokemon__name {
+  width: 400px;
+  height: 200px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.input_name {
+  width: 25px;
+  height: 25px;
 }
 
 @media (width >= 413px) {
