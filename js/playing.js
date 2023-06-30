@@ -14,13 +14,14 @@ export const play = (name_pokemon) => {
 		
 		const inputs = document.querySelectorAll('input')
 		let name_poke = ''
-  
 		inputs.forEach((element) => {
 			element.addEventListener('keyup' , ()=>{
-				name_poke = name_poke + element.value.toLowerCase()
-				if(name_poke === name_pokemon){
+				if(element.value.trim() !== ''){
+					name_poke = name_poke + element.value.toLowerCase()
 					console.log(name_poke)
-					resolve(true)
+					if(name_poke === name_pokemon){
+						resolve(true)
+					}
 				}
 			})
 		})
